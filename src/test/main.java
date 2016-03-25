@@ -31,7 +31,7 @@ public class main {
 			int year=2;//first year
 			
 			
-			pd=PeriodDetails.getAllPeriodsOfDay(sheet, year,"BCV-B", cval.getday(3));
+			pd=PeriodDetails.getAllPeriodsOfDay(sheet, year,cval.batch[year-1][1], cval.getday(3));
 			
 			for (int i=0;i<9;i++){
 				if (pd[i].getSubject()!="")
