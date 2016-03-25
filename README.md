@@ -2,10 +2,20 @@
 Cosmos College of Management and Technology creates routine for its students in xls format. They print these sheet in the notice board so that the student can view their routine. This was the only method to view the routine. 
 This program is ment to change this things. The program extracts only the routine part and creates a json file making routine data easily readable by some other applications. 
 
-##Assumptions Made
 
+##Task List
+- [x] Read from xls file
+- [x] Read routine of each day, faculty and each period
+- [ ] Create json file with data
+- [ ] Publish the json file on internet
 
+##Assumptions Made About Input File
+- The number of periods on one day is 9 
+- The starting time of first year is 10:00 and rest other starts at 07:00
+- Different years have different number of faculties
 
+##Need to Know About Output File
+- Different periods are seprated by "," in subjects, teachers and in rooms
 
 ##Sample Output json file
 The output file will have format some what like this 
@@ -62,8 +72,3 @@ The output file will have format some what like this
 
 ]}
 ```
-##Task List
-- [x] Read from xls file
-- [x] Read routine of each day, faculty and each period
-- [ ] Create json file with data
-- [ ] Publish the json file on internet
