@@ -73,4 +73,6 @@ The output file will have format some what like this
 ]}
 ```
 
+##Sample Layout of Input XLS file
+
 ![Image of Yaktocat](https://github.com/lastab/CosmosRoutineXlsToJason/blob/master/sample/xls_sample.jpg)

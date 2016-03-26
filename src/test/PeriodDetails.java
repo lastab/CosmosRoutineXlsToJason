@@ -47,7 +47,7 @@ public class PeriodDetails{
 		ConstantValues cv= new ConstantValues();
 		String[] gropus_of_sem=new String[10];
 				
-		gropus_of_sem=cv.batch[year-1];
+		gropus_of_sem=cv.batch[year];
 		int index=-1;
 		for (int i=0;i<gropus_of_sem.length;i++) {
 		    if (gropus_of_sem[i].equals(group)) {
@@ -57,7 +57,7 @@ public class PeriodDetails{
 		}
 		int group_number=index;
 		
-		System.out.println("year="+year+"group="+group+" g:"+group_number);
+		
 				
 				
 				
@@ -69,14 +69,14 @@ public class PeriodDetails{
 		return pd;
 	}
 	
-	public  static PeriodDetails getPeriodDetails(HSSFSheet sheet,int year, int period_of_day,int group_number){
+	public  static PeriodDetails getPeriodDetails(HSSFSheet sheet,int year, int period_position,int group_number){
 				
 		ConstantValues cv= new ConstantValues();
-		int sem_start=cv.sem_start[year-1];
-		if (sem_start==cv.sem_start[0])//first year starts at 10 ... others at 7
-			period_of_day+=12;
+		int sem_start=cv.sem_start[year];
+		if (year ==0)//first year starts at 10 ... others at 7
+			period_position+=12;
 		int x=sem_start+group_number*cv.GROUP_LENGTH;
-		int y=period_of_day;
+		int y=period_position;
 		PeriodDetails pd= new PeriodDetails();
 		Row r=sheet.getRow(y);
 		Cell c=r.getCell(x);

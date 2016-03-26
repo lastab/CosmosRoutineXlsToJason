@@ -16,6 +16,7 @@ public class ConstantValues {
 	
 	public   String[][] batch =new String[4][10];
 	public   int[] sem_start= new int[4];
+	public int[] no_of_groups_in_year = new int [4];
 	
 	public int getday(int daynumber){
 		return (DAY_START+DAY_LENGTH*daynumber);
@@ -83,6 +84,11 @@ public class ConstantValues {
 		sem_start[1]=26*1+11-1;
 		sem_start[2]=26*2+18-1;
 		sem_start[3]=26*4+2-1;
+		
+		no_of_groups_in_year[0]=8;
+		no_of_groups_in_year[1]=9;
+		no_of_groups_in_year[2]=10;
+		no_of_groups_in_year[3]=10;
 
 
 		batch[0][0]="BCV-A";
@@ -90,9 +96,9 @@ public class ConstantValues {
 		batch[0][2]="BCV-C";
 		batch[0][3]="BCV-D";
 		batch[0][4]="BEIT-A";
-		batch[0][5]="BEX-B";
-		batch[0][6]="BCE-A";
-		batch[0][7]=null;
+		batch[0][5]="BEIT-B";
+		batch[0][6]="BEX-B";
+		batch[0][7]="BCE-A";		
 		batch[0][8]=null;
 		batch[0][9]=null;
 
