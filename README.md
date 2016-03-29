@@ -7,6 +7,7 @@ This program is ment to change this things. The program extracts only the routin
 - [x] Read from xls file
 - [x] Read routine of each day, faculty and each period
 - [x] Create json file with data
+- [ ] Create GUI
 - [ ] Publish the json file on internet
 
 ##Assumptions Made About Input File
